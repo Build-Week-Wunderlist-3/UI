@@ -1,0 +1,27 @@
+footer{
+    width:100%;
+    background-color: @main-color;
+    height: 7vh;
+    display: flex;
+    position: relative;
+    bottom:0;
+    .position(center, center);
+
+    .social{
+        width:10%;
+        .position(center, center);
+        justify-content: space-between;
+
+        a{
+            i{
+                font-size:2rem;
+                color: @link-color;
+
+                &:hover{
+                    font-size:3rem;
+                    color: darken(@link-color, 20%);
+                }
+            }
+        }
+    }
+}
