@@ -128,7 +128,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ol,
 ul {
@@ -198,8 +198,36 @@ header h1 {
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
+footer {
+  width: 100%;
+  background-color: #0E7C7B;
+  height: 7vh;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .social a i {
+  font-size: 2rem;
+  color: #F0EDEE;
+}
+footer .social a i:hover {
+  font-size: 3rem;
+  color: #c2b5b9;
+}
 .intro {
   padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .intro h2 {
   text-align: center;
@@ -209,9 +237,25 @@ header h1 {
 .intro p {
   text-align: center;
 }
+.intro a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #F0EDEE;
+  width: 15%;
+  text-align: center;
+  background-color: #0E7C7B;
+  opacity: 0.7;
+  border-radius: 10%;
+  border: 1px solid #042020;
+  margin: 3%;
+}
+.intro a:hover {
+  background-color: #042020;
+  text-transform: uppercase;
+  width: 20%;
+}
 .main-container {
   display: flex;
-  margin: 2%;
   justify-content: space-evenly;
 }
 .main-container .Image {
@@ -252,7 +296,7 @@ header h1 {
 .main-container .Image.list img {
   width: 100%;
   display: flex;
-  object-fit: contain;
+  object-fit: cover;
 }
 .text.Two {
   width: 20%;
@@ -284,4 +328,33 @@ header h1 {
 }
 .Image.notepad img {
   width: 100%;
+}
+.features {
+  padding: ;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.features h3 {
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #F0EDEE;
+  color: black;
+  margin: 2% 0% 0% 3%;
+}
+.features div {
+  margin: 2%;
+  background-color: #0E7C7B;
+  opacity: 0.7;
+  border-radius: 10%;
+  width: 30%;
+  text-align: center;
+}
+.features div:hover {
+  background-color: #042020;
+  cursor: pointer;
+}
+.features div h4 {
+  padding: 2%, 0%;
 }
