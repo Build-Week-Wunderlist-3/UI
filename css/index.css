@@ -162,6 +162,7 @@ body {
 @media (max-width:500px) {
   .nav-bar {
     width: 100%;
+    margin-bottom: 2%;
   }
 }
 .nav-bar a {
@@ -189,6 +190,7 @@ header {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    height: 14vh;
   }
 }
 header h1 {
@@ -214,6 +216,11 @@ footer .social {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  footer .social {
+    width: 20%;
+  }
 }
 footer .social a i {
   font-size: 2rem;
@@ -249,91 +256,77 @@ footer .social a i:hover {
   border: 1px solid #042020;
   margin: 3%;
 }
+@media (max-width:500px) {
+  .intro a {
+    width: 25%;
+  }
+}
 .intro a:hover {
   background-color: #042020;
   text-transform: uppercase;
   width: 20%;
 }
+@media (max-width:500px) {
+  .intro a:hover {
+    width: 30%;
+  }
+}
 .main-container {
   display: flex;
   justify-content: space-evenly;
 }
-.main-container .Image {
+@media (max-width:500px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-container div {
+  width: 20%;
+  display: flex;
   border-radius: 10%;
   overflow: hidden;
-  display: flex;
-  object-fit: contain;
-}
-.main-container .text.One {
-  width: 20%;
-  padding: 2%;
-  background-color: #0E7C7B;
-  opacity: 0.7;
-  border-radius: 10%;
-  display: flex;
-  flex-direction: column;
-}
-.main-container .text.One h3 {
-  margin-bottom: 4%;
-  text-decoration: underline;
-  font-weight: 600;
 }
 @media (max-width:500px) {
-  .main-container .text.One {
-    margin-top: 2%;
-    width: 80%;
-  }
-}
-.main-container .Image.list {
-  width: 20%;
-  display: flex;
-}
-@media (max-width:500px) {
-  .main-container .Image.list {
+  .main-container div {
     width: 50%;
+    margin-top: 4%;
   }
 }
-.main-container .Image.list img {
+.main-container div img {
   width: 100%;
   display: flex;
   object-fit: cover;
 }
-.text.Two {
-  width: 20%;
+.main-container .text {
   padding: 2%;
   background-color: #0E7C7B;
   opacity: 0.7;
   border-radius: 10%;
+  display: flex;
   flex-direction: column;
 }
-.text.Two h3 {
+.main-container .text h3 {
   margin-bottom: 4%;
   text-decoration: underline;
   font-weight: 600;
+  text-align: center;
 }
 @media (max-width:500px) {
-  .text.Two {
-    margin-top: 2%;
-    width: 80%;
+  .main-container .text {
+    margin-top: 4%;
+    width: 60%;
   }
-}
-.Image.notepad {
-  width: 20%;
-  display: flex;
-}
-@media (max-width:500px) {
-  .Image.notepad {
-    width: 50%;
-  }
-}
-.Image.notepad img {
-  width: 100%;
 }
 .features {
-  padding: ;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+@media (max-width:500px) {
+  .features {
+    margin-bottom: 4%;
+  }
 }
 .features h3 {
   width: 100%;
@@ -343,18 +336,23 @@ footer .social a i:hover {
   color: black;
   margin: 2% 0% 0% 3%;
 }
+@media (max-width:500px) {
+  .features h3 {
+    margin: 4% 0%;
+    text-align: center;
+  }
+}
 .features div {
   margin: 2%;
+  padding: 1% 0%;
   background-color: #0E7C7B;
   opacity: 0.7;
   border-radius: 10%;
   width: 30%;
   text-align: center;
+  border-radius: 20%;
 }
 .features div:hover {
   background-color: #042020;
   cursor: pointer;
-}
-.features div h4 {
-  padding: 2%, 0%;
 }
