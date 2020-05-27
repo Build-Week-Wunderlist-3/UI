@@ -1,0 +1,41 @@
+@mobile: ~'(max-width:500px)';
+
+.position(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.backgroundImg{
+    background-image: url("../img/image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.custom-links(@size){
+    font-size: @size;
+    text-decoration: none;
+    color: #F0EDEE;
+}
+
+.custom-button(@width){
+    background-color: @main-color;
+    border-radius: 10%;
+    color: #F0EDEE;
+}
+
+.textBackground{
+    background-color: @main-color;
+    opacity: .3;
+    border-radius: 10%;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
