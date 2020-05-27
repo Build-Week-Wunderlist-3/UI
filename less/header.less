@@ -4,6 +4,7 @@ header {
     display: flex;
     align-items: flex-end;
     padding-bottom: 2%;
+    align-items: center;
 
     @media @mobile{
         flex-direction: column;
@@ -12,12 +13,24 @@ header {
         height: 14vh;
     }
 
-    h1{
-        padding-left: 3%;
+    .title{
+        display: flex;
+        padding:0%;
+        margin:4% 0% 2% 2%;
         width: 50%;
         font-size: 3rem;
         color: #fff;
         text-shadow: @neonBlue;
-        
+        text-decoration:none;
+
+        &:hover{
+            cursor: default;
+        }
+
+        h1{
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 }
