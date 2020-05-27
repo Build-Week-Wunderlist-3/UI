@@ -1,0 +1,22 @@
+header {
+    height: 10vh;
+    background-color: @main-color;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2%;
+
+    @media @mobile{
+        flex-direction: column;
+        .position(center, center);
+        justify-content: space-between;
+    }
+
+    h1{
+        padding-left: 3%;
+        width: 50%;
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: @neonBlue;
+        
+    }
+}
