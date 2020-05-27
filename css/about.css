@@ -1,8 +1,295 @@
-@import "variables";
-@import "mixins";
-@import "reset";
-@import "global";
-@import "navigation";
-@import "header";
-@import "footer";
-@import "about-page.less";
+.backgroundImg {
+  background-image: url("../img/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.textBackground {
+  background-color: #0E7C7B;
+  opacity: 0.7;
+  border-radius: 10%;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.featureName {
+  margin-bottom: 4%;
+  text-decoration: underline;
+  font-weight: 600;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-image: url("../img/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+.nav-bar {
+  width: 50%;
+  display: flex;
+}
+@media (max-width:500px) {
+  .nav-bar {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+.nav-bar a {
+  width: 25%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #F0EDEE;
+  text-align: center;
+}
+.nav-bar a:hover {
+  text-transform: uppercase;
+  color: #c2b5b9;
+}
+header {
+  height: 10vh;
+  background-color: #0E7C7B;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2%;
+}
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 14vh;
+  }
+}
+header h1 {
+  padding-left: 3%;
+  width: 50%;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+footer {
+  width: 100%;
+  background-color: #0E7C7B;
+  height: 7vh;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  footer .social {
+    width: 20%;
+  }
+}
+footer .social a i {
+  font-size: 2rem;
+  color: #F0EDEE;
+}
+footer .social a i:hover {
+  font-size: 3rem;
+  color: #c2b5b9;
+}
+.title {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.title a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #F0EDEE;
+  width: 15%;
+  text-align: center;
+  background-color: #0E7C7B;
+  opacity: 0.7;
+  border-radius: 10%;
+  border: 1px solid #042020;
+  margin: 2%;
+}
+.title a:hover {
+  background-color: #042020;
+  text-transform: uppercase;
+  width: 20%;
+}
+.teamGallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.teamGallery .member {
+  width: 25%;
+  margin: 3%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.teamGallery .member .description {
+  margin-top: 5%;
+  text-align: center;
+}
+.teamGallery .member .description h3 {
+  font-weight: 800;
+}
+.teamGallery .member .description a {
+  font-size: 1.5rem;
+  color: #0E7C7B;
+}
+.teamGallery .member .description a:hover {
+  color: #F0EDEE;
+}
+.teamGallery .member .pic {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+}
+.teamGallery .member .pic img {
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+}
