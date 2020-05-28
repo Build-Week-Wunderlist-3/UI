@@ -1,4 +1,10 @@
+/*Media Queries*/
+
 @mobile: ~'(max-width:500px)';
+@tablet: ~'(max-width: 900px)';
+
+
+/*Styling mixins*/
 
 .position(@justify, @align){
     display: flex;
@@ -30,17 +36,24 @@
     border-radius: 10%;
 }
 
-.glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
 .featureName{
     margin-bottom: 4%;
     text-decoration: underline;
     font-weight: 600;
+}
+
+
+/*Animations*/
+
+@keyframes mymove{
+    0% {background-color: @main-color;}
+    50% {background-color:@secondary-color;}
+    100% {background-color: @main-color;}
+    
+}
+
+@keyframes neoncycle{
+    0% {text-shadow: @neonBlue;}
+    50% {text-shadow: @neonGreen;}
+    100% {text-shadow: @neonBlue;}
 }

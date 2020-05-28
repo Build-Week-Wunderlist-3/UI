@@ -1,3 +1,5 @@
+/*Media Queries*/
+/*Styling mixins*/
 .backgroundImg {
   background-image: url("../img/image.png");
   background-size: cover;
@@ -8,18 +10,33 @@
   opacity: 0.7;
   border-radius: 10%;
 }
-.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
 .featureName {
   margin-bottom: 4%;
   text-decoration: underline;
   font-weight: 600;
+}
+/*Animations*/
+@keyframes mymove {
+  0% {
+    background-color: #0E7C7B;
+  }
+  50% {
+    background-color: #07393c;
+  }
+  100% {
+    background-color: #0E7C7B;
+  }
+}
+@keyframes neoncycle {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
+  50% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ae23, 0 0 20px #00ae23, 0 0 25px #00ae23, 0 0 30px #00ae23, 0 0 35px #00ae23;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -184,6 +201,7 @@ header {
   align-items: flex-end;
   padding-bottom: 2%;
   align-items: center;
+  animation: mymove 10s infinite;
 }
 @media (max-width:500px) {
   header {
@@ -192,7 +210,7 @@ header {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    height: 14vh;
+    height: 18vh;
   }
 }
 header .title {
@@ -204,6 +222,7 @@ header .title {
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
   text-decoration: none;
+  animation: neoncycle 10s infinite;
 }
 header .title:hover {
   cursor: default;
@@ -294,8 +313,6 @@ footer .social a i:hover {
 @media (max-width:500px) {
   .teamGallery .member {
     width: 60%;
-    border-radius: 10%;
-    overflow: hidden;
   }
 }
 .teamGallery .member .description {
@@ -316,6 +333,8 @@ footer .social a i:hover {
   display: flex;
   object-fit: cover;
   width: 100%;
+  border-radius: 10%;
+  overflow: hidden;
 }
 .teamGallery .member .pic img {
   width: 100%;
