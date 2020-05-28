@@ -273,7 +273,7 @@ footer .social a i:hover {
   }
 }
 .intro a:hover {
-  background-color: #042020;
+  opacity: 1;
   text-transform: uppercase;
   width: 20%;
 }
@@ -364,6 +364,6 @@ footer .social a i:hover {
   border-radius: 20%;
 }
 .features div:hover {
-  background-color: #042020;
+  opacity: 1;
   cursor: pointer;
 }

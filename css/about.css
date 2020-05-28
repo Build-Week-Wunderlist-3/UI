@@ -158,6 +158,7 @@ body {
 .nav-bar {
   width: 50%;
   display: flex;
+  align-self: flex-end;
 }
 @media (max-width:500px) {
   .nav-bar {
@@ -182,6 +183,7 @@ header {
   display: flex;
   align-items: flex-end;
   padding-bottom: 2%;
+  align-items: center;
 }
 @media (max-width:500px) {
   header {
@@ -193,12 +195,21 @@ header {
     height: 14vh;
   }
 }
-header h1 {
-  padding-left: 3%;
+header .title {
+  display: flex;
+  padding: 0%;
+  margin: 4% 0% 2% 2%;
   width: 50%;
   font-size: 3rem;
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  text-decoration: none;
+}
+header .title:hover {
+  cursor: default;
+}
+header .title h1:hover {
+  cursor: pointer;
 }
 footer {
   width: 100%;
@@ -230,17 +241,17 @@ footer .social a i:hover {
   font-size: 3rem;
   color: #c2b5b9;
 }
-.title {
+.heading {
   padding: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.title h2 {
+.heading h2 {
   text-align: center;
   font-size: 2.5rem;
 }
-.title a {
+.heading a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #F0EDEE;
@@ -252,22 +263,40 @@ footer .social a i:hover {
   border: 1px solid #042020;
   margin: 2%;
 }
-.title a:hover {
-  background-color: #042020;
+@media (max-width:500px) {
+  .heading a {
+    width: 45%;
+  }
+}
+.heading a:hover {
+  opacity: 1;
   text-transform: uppercase;
   width: 20%;
+}
+@media (max-width:500px) {
+  .heading a:hover {
+    width: 50%;
+  }
 }
 .teamGallery {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 10%;
 }
 .teamGallery .member {
   width: 25%;
   margin: 3%;
   display: flex;
   flex-flow: column nowrap;
+}
+@media (max-width:500px) {
+  .teamGallery .member {
+    width: 60%;
+    border-radius: 10%;
+    overflow: hidden;
+  }
 }
 .teamGallery .member .description {
   margin-top: 5%;
