@@ -268,7 +268,8 @@ footer .social a i:hover {
 }
 .heading h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
 }
 .heading a {
   font-size: 1.5rem;
@@ -340,4 +341,8 @@ footer .social a i:hover {
   width: 100%;
   display: flex;
   object-fit: contain;
+  filter: grayscale(100%);
+}
+.teamGallery .member .pic img:hover {
+  filter: grayscale(0%);
 }
