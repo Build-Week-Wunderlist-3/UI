@@ -386,9 +386,8 @@ footer .social a i:hover {
 }
 .features h3 {
   width: 100%;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #F0EDEE;
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
   color: black;
   margin: 2% 0% 0% 3%;
   text-align: center;
